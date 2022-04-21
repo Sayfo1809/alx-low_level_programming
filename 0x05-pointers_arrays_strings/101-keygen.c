@@ -68,4 +68,5 @@ char random_ascii(void)
 		return (rtrnCh);
 	}
 	else
-	
+		return (0);
+}
