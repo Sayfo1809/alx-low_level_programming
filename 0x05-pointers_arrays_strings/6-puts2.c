@@ -20,21 +20,16 @@ int _strlen(char *s)
 }
 
 /**
- * rev_string - reverses a string
- * @s: string to reverse
+ * puts2 - prints every second character of a string, followed by a new line
+ * @str: string to print
  */
 
-void rev_string(char *s)
+void puts2(char *str)
 {
-	int i = 0;
-	int j = (_strlen(s) - 1);
-	char tmp;
+	int i;
 
-	while (i < j)
-	{
-		tmp = s[i];
-		s[i] = s[j];
-		s[j] = tmp;
-		i++, j--;
-	}
+	for (i = 0; str[i] != '\0' && i < _strlen(str); i += 2)
+		_putchar(str[i]);
+
+	_putchar('\n');
 }
