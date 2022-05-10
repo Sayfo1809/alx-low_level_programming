@@ -1,19 +1,12 @@
 #include <stdio.h>
-#include "1-pi.h"
-#include "1-pi.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * main - prints current filename to std output
+ * Return: 0 on success
  */
+
 int main(void)
 {
-	float a;
-	float r;
-
-	r = 98;
-	a = PI * r * r;
-	printf("%.3f\n", a);
+	printf("%s\n", __FILE__);
 	return (0);
 }
