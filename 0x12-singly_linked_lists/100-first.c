@@ -1,13 +1,11 @@
-include <stdio.h>
+#include <stdio.h>
 
-/* Using constructors in C! Who knew!? */
-void main_constructor(void) __attribute__((constructor));
 /**
- * main_constructor - constructor function that runs before main ()
- *
- * Return: always void
+ * execute_before_main - executes this function before main function
+ * Note: made possible by prior declaration of "__attribute__ ((constructor))"
  */
-void main_constructor(void)
+
+void __attribute__ ((constructor)) execute_before_main()
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
